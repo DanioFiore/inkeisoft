@@ -137,7 +137,10 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            Hi, I&apos;m Danio Fiore, a Software Developer who turned his interest in the Blockchain into a career.
+            Hi, I&apos;m <strong>Danio Fiore</strong>, a Software Developer who turned his passion for the <strong>Blockchain</strong> into a career. <br />
+            <strong>Inkeisoft</strong> is an idea of minimal Software Development. <br />
+            <strong>Less is more</strong>, and I believe in the power of simplicity and efficiency in software design. <br />
+            Actually I work as a <strong>Backend Engineer</strong> and <strong>Cloud Architect</strong>.
           </p>
         </div>
       </motion.section>
