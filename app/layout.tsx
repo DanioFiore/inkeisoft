@@ -13,15 +13,15 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nim-fawn.vercel.app/'),
+  metadataBase: new URL('https://www.inkeisoft.com/'),
   alternates: {
     canonical: '/'
   },
   title: {
-    default: 'Nim - Personal website template',
-    template: '%s | Nim'
+    default: 'Inkeisoft',
+    template: '%s | Inkeisoft'
   },
-  description:  'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
+  description:  'Inkeisoft is an idea of minimal Software Development',
 };
 
 const geist = Geist({
