@@ -26,7 +26,7 @@ export default function ContactLoading() {
         </div>
 
         {/* Form skeleton */}
-        <div className="max-w-2xl mx-auto">
+        {/* <div className="max-w-2xl mx-auto">
             <div className="bg-white dark:bg-zinc-800 rounded-lg border border-zinc-200 dark:border-zinc-700 p-8">
             <div className="text-center mb-8">
                 <div className="h-8 bg-zinc-200 dark:bg-zinc-700 rounded animate-pulse max-w-sm mx-auto mb-2" />
@@ -42,7 +42,7 @@ export default function ContactLoading() {
                 <div className="h-12 bg-zinc-200 dark:bg-zinc-700 rounded-lg animate-pulse" />
             </div>
             </div>
-        </div>
+        </div> */}
 
         {/* Social links skeleton */}
         <div className="text-center space-y-6">
