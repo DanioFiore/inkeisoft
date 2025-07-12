@@ -198,7 +198,7 @@ export const SOCIAL_LINKS = [
 export const COMPANY_INFO = {
     name: 'Inkeisoft',
     tagline: 'In Case Of Software',
-    description: 'Software development company focused on creating innovative solutions',
+    description: 'Minimal Software development',
     email: 'daniofioredev@gmail.com',
     phone: '+39 340 959 7469',
     address: 'Via Giustino Fortunato, 2 B/2, 70125 Bari, Italy',
@@ -388,8 +388,8 @@ export const ACCESSIBILITY_CONFIG = {
 // SEO configuration
 export const SEO_CONFIG = {
     title: 'Inkeisoft - In Case Of Software',
-    description: 'Software development company',
-    keywords: ['software development', 'web development', 'mobile apps', 'technology', 'software'],
+    description: 'Minimal Software development',
+    keywords: ['software development', 'web development', 'mobile apps', 'technology', 'software', 'minimalistic'],
     author: 'Inkeisoft',
     siteUrl: 'https://www.inkeisoft.com',
     image: '/cover.jpg',

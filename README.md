@@ -1,8 +1,6 @@
-<img src="/public/cover.jpg" alt="Inkeisoft - Personal Portfolio & Software Development" width="100%" />
-
 # Inkeisoft - In Case Of Software
 
-Welcome to my personal portfolio and software development showcase. This modern website is built with Next.js 15, React 19, Tailwind CSS v4, and Motion, featuring a comprehensive navigation system and delightful animated components powered by [Motion-Primitives](https://motion-primitives.com).
+Welcome to my personal portfolio and software development showcase.
 
 Live site: [https://inkeisoft.com](https://inkeisoft.com)
 
@@ -78,9 +76,7 @@ inkeisoft/
 
 - **Website**: [inkeisoft.com](https://inkeisoft.com)
 - **GitHub**: [@DanioFiore](https://github.com/DanioFiore)
-- **LinkedIn**: [Dario Fiore](https://linkedin.com/in/danio-fiore)
+- **LinkedIn**: [Danio Fiore](https://linkedin.com/in/danio-fiore)
 - **Email**: [info@inkeisoft.com](mailto:daniofioredev@gmail.com)
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+Template used: https://vercel.com/new/danios-projects-4156cbf8/templates/portfolio/nim-minimalist-personal-site
