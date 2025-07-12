@@ -1,40 +1,86 @@
-<img src="/public/cover.jpg" alt="Cover image representing Nim, a personal website template" width="100%" />
+<img src="/public/cover.jpg" alt="Inkeisoft - Personal Portfolio & Software Development" width="100%" />
 
-Nim is a free and open-source personal website template built with Next.js 15, React 19, Tailwind CSS v4, and Motion. Designed for developers, designers, and founders, it combines minimalism with delightful animated components powered by [Motion-Primitives](https://motion-primitives.com).
+# Inkeisoft - In Case Of Software
 
-Live demo: [https://nim-fawn.vercel.app](https://nim-fawn.vercel.app)
+Welcome to my personal portfolio and software development showcase. This modern website is built with Next.js 15, React 19, Tailwind CSS v4, and Motion, featuring a comprehensive navigation system and delightful animated components powered by [Motion-Primitives](https://motion-primitives.com).
+
+Live site: [https://inkeisoft.com](https://inkeisoft.com)
 
 ## Features
 
-- Minimal one-page portfolio layout.
-- Blog support with MDX.
-- Responsive and accessible design.
-- Easy to use
-- [Motion-Primitives](https://motion-primitives.com) for animated components.
+- **Modern Portfolio Design** - Clean, professional layout showcasing projects and skills
+- **Advanced Navigation System** - Complete navbar with search, notifications, and mobile menu
+- **Blog Integration** - Technical articles and insights powered by MDX
+- **Project Showcase** - Interactive portfolio with detailed case studies
+- **Responsive Design** - Optimized for all devices and screen sizes
+- **Dark/Light Mode** - Seamless theme switching with system preference support
+- **Animated Components** - Smooth animations powered by [Motion-Primitives](https://motion-primitives.com)
+- **SEO Optimized** - Built-in metadata and OpenGraph support
+- **Performance First** - Optimized for Core Web Vitals and loading speed
 
 ## Getting Started
 
-For detailed setup instructions, refer to the [Installation Guide](./INSTALLATION.md).
+To run this project locally for development or contribution purposes:
 
 ```bash
-git clone https://github.com/ibelick/nim.git
-cd nim
+git clone https://github.com/DanioFiore/inkeisoft.git
+cd inkeisoft
 npm install
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Contributing
+### Navigation Components
 
-Contributions are welcome! Feel free to open issues or submit pull requests to improve Nim.
+This project features a comprehensive navigation system with:
 
-## Deployment
+- **Main Navbar** - Responsive navigation with animated background
+- **Search Functionality** - Global search with keyboard shortcuts
+- **Notification Center** - Real-time notifications system
+- **Mobile Navigation** - Advanced mobile menu with submenu support
+- **Breadcrumb Navigation** - Contextual navigation breadcrumbs
+- **Social Links** - Integrated social media links
 
-You can deploy your site to any hosting platform that supports Next.js. For the easiest deployment experience, consider using Vercel:
+For detailed documentation on the navigation components, see [NAVBAR_README.md](./NAVBAR_README.md).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fibelick%2Fnim&env=NEXT_PUBLIC_SITE_URL&project-name=nim&repository-name=nim&redirect-url=https%3A%2F%2Ftwitter.com%2Fibelick&demo-title=Nim&demo-description=Nim%20is%20a%20free%20and%20open-source%20minimal%20personal%20website%20template%20built%20with%20Next.js%2015%2C%20React%2019%2C%20and%20Motion-Primitives.&demo-url=https%3A%2F%2Fnim.vercel.app&demo-image=https%3A%2F%2Fraw.githubusercontent.com%2Fibelick%2Fnim%2Frefs%2Fheads%2Fmain%2F.github%2Fassets%2Freadme.png&teamSlug=ibelick)
+## Tech Stack
 
-## About
+- **Framework**: Next.js 15 with App Router
+- **React**: Version 19 with modern hooks and patterns
+- **Styling**: Tailwind CSS v4 with custom design system
+- **Animations**: Motion (Framer Motion) for smooth interactions
+- **Icons**: Lucide React for consistent iconography
+- **Theme**: next-themes for dark/light mode support
+- **Content**: MDX for blog posts and dynamic content
+- **Typography**: Geist font family for optimal readability
+- **Development**: TypeScript, ESLint, Prettier
 
-Nim is designed to make personal branding effortless and beautiful. If you enjoy it, consider sharing it and exploring [Motion-Primitives Pro](https://pro.motion-primitives.com/).
+## Project Structure
+
+```
+inkeisoft/
+├── app/                    # Next.js app directory
+│   ├── navbar.tsx         # Main navigation component
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx          # Homepage
+│   └── blog/             # Blog pages
+├── components/            # Reusable UI components
+│   └── ui/               # Navigation & UI components
+├── hooks/                # Custom React hooks
+├── lib/                  # Utilities and configuration
+│   ├── utils.ts          # Helper functions
+│   └── navbar-config.ts  # Navigation configuration
+└── public/               # Static assets
+```
+
+## Contact & Connect
+
+- **Website**: [inkeisoft.com](https://inkeisoft.com)
+- **GitHub**: [@DanioFiore](https://github.com/DanioFiore)
+- **LinkedIn**: [Dario Fiore](https://linkedin.com/in/danio-fiore)
+- **Email**: [info@inkeisoft.com](mailto:daniofioredev@gmail.com)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
