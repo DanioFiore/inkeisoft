@@ -24,7 +24,7 @@ export function Logo({ showTagline = true, className = '' }: LogoProps) {
             preset="fade"
             className="text-xs text-zinc-600 dark:text-zinc-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
-            In Case Of Software
+                In Case Of Software
             </TextEffect>
         )}
         </Link>
