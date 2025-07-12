@@ -253,8 +253,7 @@ export default function Contact() {
                 delay={0.2}
                 className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto"
             >
-                Have a project in mind? Let's discuss how we can bring your ideas to life.
-                I'm always excited to work on new challenges and collaborate with great people.
+                Want to discuss a project or just say hello? I'm always excited to hear from you.
             </TextEffect>
             </motion.section>
 
@@ -301,7 +300,8 @@ export default function Contact() {
             </motion.section>
 
             {/* Contact Form */}
-            <motion.section
+            {/* THIS IS A FORM TO SEND EMAIL BUT THE WEBSITE IS STATIC, SO NO API CALLS FOR NOW */}
+            {/* <motion.section
             variants={VARIANTS_SECTION}
             transition={TRANSITION_SECTION}
             className="max-w-2xl mx-auto"
@@ -317,7 +317,7 @@ export default function Contact() {
                 </div>
                 <ContactForm />
             </div>
-            </motion.section>
+            </motion.section> */}
 
             {/* Social Links */}
             <motion.section

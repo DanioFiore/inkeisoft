@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
     title: 'Contact - Inkeisoft',
     description: 'Get in touch with Inkeisoft for your software development needs. Based in Bari, Italy, available for remote work worldwide.',
-    keywords: ['contact', 'software development', 'inkeisoft', 'bari', 'italy', 'remote work'],
+    keywords: ['contact', 'software development', 'inkeisoft', 'bari', 'italy', 'remote work', 'minimalistic'],
     openGraph: {
         title: 'Contact - Inkeisoft',
         description: 'Get in touch with Inkeisoft for your software development needs.',
