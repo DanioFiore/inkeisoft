@@ -212,7 +212,7 @@ export default function Personal() {
 				</div>
 			</motion.section>
 
-			<motion.section
+			{/* <motion.section
 				variants={VARIANTS_SECTION}
 				transition={TRANSITION_SECTION}
 			>
@@ -246,7 +246,7 @@ export default function Personal() {
 						))}
 					</AnimatedBackground>
 				</div>
-			</motion.section>
+			</motion.section> */}
 
 			<motion.section
 				variants={VARIANTS_SECTION}
