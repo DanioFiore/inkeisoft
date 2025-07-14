@@ -13,7 +13,7 @@ import {
 import Link from 'next/link'
 import { AnimatedBackground } from '@/components/ui/animated-background'
 import {
-	PROJECTS,
+	SELECTED_PROJECTS,
 	WORK_EXPERIENCE,
 	BLOG_POSTS,
 	EMAIL,
@@ -43,6 +43,11 @@ type ProjectVideoProps = {
 	src: string
 }
 
+type ProjectLogoProps = {
+	src: string
+	alt: string
+}
+
 function ProjectVideo({ src }: ProjectVideoProps) {
 	return (
 		<MorphingDialog
@@ -69,6 +74,48 @@ function ProjectVideo({ src }: ProjectVideoProps) {
 						loop
 						muted
 						className="aspect-video h-[50vh] w-full rounded-xl md:h-[70vh]"
+					/>
+				</MorphingDialogContent>
+				<MorphingDialogClose
+					className="fixed top-6 right-6 h-fit w-fit rounded-full bg-white p-1"
+					variants={{
+						initial: { opacity: 0 },
+						animate: {
+							opacity: 1,
+							transition: { delay: 0.3, duration: 0.1 },
+						},
+						exit: { opacity: 0, transition: { duration: 0 } },
+					}}
+				>
+					<X className="h-5 w-5 text-zinc-500" />
+				</MorphingDialogClose>
+			</MorphingDialogContainer>
+		</MorphingDialog>
+	)
+}
+
+function ProjectLogo({ src, alt }: ProjectLogoProps) {
+	return (
+		<MorphingDialog
+			transition={{
+				type: 'spring',
+				bounce: 0,
+				duration: 0.3,
+			}}
+		>
+			<MorphingDialogTrigger>
+				<img
+					src={src}
+					alt={alt}
+					className="aspect-video w-full cursor-zoom-in rounded-xl object-cover"
+				/>
+			</MorphingDialogTrigger>
+			<MorphingDialogContainer>
+				<MorphingDialogContent className="relative aspect-video rounded-2xl bg-zinc-50 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950 dark:ring-zinc-800/50">
+					<img
+						src={src}
+						alt={alt}
+						className="aspect-video h-[50vh] w-full rounded-xl object-contain md:h-[70vh]"
 					/>
 				</MorphingDialogContent>
 				<MorphingDialogClose
@@ -152,10 +199,18 @@ export default function Personal() {
 			>
 				<h3 className="mb-5 text-lg font-medium">Selected Projects</h3>
 				<div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-					{PROJECTS.map((project) => (
+					{SELECTED_PROJECTS.map((project) => (
 						<div key={project.name} className="space-y-2">
 							<div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
-								<ProjectVideo src={project.video} />
+								{project.logo ? (
+									<ProjectLogo src={project.logo} alt={`${project.name} logo`} />
+								) : project.video ? (
+									<ProjectVideo src={project.video} />
+								) : (
+									<div className="aspect-video w-full rounded-xl bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center">
+										<p className="text-zinc-500 dark:text-zinc-400">No media available</p>
+									</div>
+								)}
 							</div>
 							<div className="px-1">
 								<a

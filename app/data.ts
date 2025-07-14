@@ -2,7 +2,8 @@ type Project = {
   name: string
   description: string
   link: string
-  video: string
+  video?: string
+  logo?: string
   id: string
 }
 
@@ -28,24 +29,28 @@ type SocialLink = {
   link: string
 }
 
-export const PROJECTS: Project[] = [
+export const SELECTED_PROJECTS: Project[] = [
   {
     name: 'Know Yourself AI',
     description:
-      'Stop to remember everything, let AI do it for you. Know Yourself AI is a personal knowledge management tool that uses AI to help you remember and organize your thoughts.',
+      'Stop to remember everything. Know Yourself AI is a personal knowledge management system that uses AI to help you remember and organize your thoughts, ideas, and experiences.',
     link: 'https://github.com/DanioFiore/know-yourself-ai',
     video:
       'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+    logo: '/images/projects_logos/know-yourself-ai-logo.png',
     id: 'project1',
   },
-  // {
-  //   name: 'Motion Primitives',
-  //   description: 'UI kit to make beautiful, animated interfaces.',
-  //   link: 'https://motion-primitives.com/',
-  //   video:
-  //     'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
-  //   id: 'project2',
-  // },
+  {
+    name: 'Money Wizardry',
+    description:
+      'Track your finances with ease. Money Wizardry is a personal finance management tool that helps you budget, track expenses, and achieve your financial goals.',
+    link: 'https://github.com/DanioFiore/money-wizardry',
+    video:
+      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+    logo: '/images/projects_logos/money-wizardry-logo.png',
+    id: 'project2',
+  },
+
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
