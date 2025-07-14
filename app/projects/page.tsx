@@ -31,7 +31,7 @@ const PROJECTS = [
         id: 1,
         title: "Know Yourself AI",
         description: "Stop to remember everything. Know Yourself AI is a personal knowledge management system that uses AI to help you remember and organize your thoughts, ideas, and experiences.",
-        image: "/placeholder-project.jpg",
+        image: "/images/projects_logos/know-yourself-ai-logo.png",
         technologies: ["Python", "FastAPI", "PostgreSQL", "Vue.js", "Docker", 'OpenAI', "Redis"],
         category: "Full Stack",
         status: "In progress",
@@ -52,7 +52,7 @@ const PROJECTS = [
         id: 2,
         title: "Money Wizardry",
         description: "Track your finances with ease. Money Wizardry is a personal finance management tool that helps you budget, track expenses, and achieve your financial goals.",
-        image: "/placeholder-project.jpg",
+        image: "/images/projects_logos/money-wizardry-logo.png",
         technologies: ["Python", "FastAPI", "PostgreSQL", "Redis", "Docker"],
         category: "Full Stack",
         status: "In progress",
@@ -76,7 +76,6 @@ const CATEGORIES = [
     { name: "All", count: PROJECTS.length },
     { name: "Full Stack", count: PROJECTS.filter(p => p.category === "Full Stack").length },
     { name: "Backend", count: PROJECTS.filter(p => p.category === "Backend").length },
-    { name: "Frontend", count: PROJECTS.filter(p => p.category === "Frontend").length },
 ]
 
 export default function Projects() {
@@ -155,9 +154,27 @@ export default function Projects() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: index * 0.1 }}
                                 >
-                                    {/* Project Image Placeholder */}
-                                    <div className="h-48 bg-zinc-100 dark:bg-zinc-700 flex items-center justify-center">
-                                        <Code className="w-16 h-16 text-zinc-400" />
+                                    {/* Project Image */}
+                                    <div className="h-48 bg-zinc-100 dark:bg-zinc-700 flex items-center justify-center overflow-hidden">
+                                        {project.image ? (
+                                            <img 
+                                                src={project.image} 
+                                                alt={`${project.title} logo`}
+                                                className="w-full h-full object-cover"
+                                                onError={(e) => {
+                                                    // Fallback to icon if image fails to load
+                                                    const img = e.currentTarget;
+                                                    const fallback = img.nextElementSibling as HTMLElement;
+                                                    img.style.display = 'none';
+                                                    if (fallback) {
+                                                        fallback.style.display = 'flex';
+                                                    }
+                                                }}
+                                            />
+                                        ) : null}
+                                        <div className="w-full h-full flex items-center justify-center" style={{ display: project.image ? 'none' : 'flex' }}>
+                                            <Code className="w-16 h-16 text-zinc-400" />
+                                        </div>
                                     </div>
                                     
                                     {/* Project Content */}
