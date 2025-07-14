@@ -181,7 +181,7 @@ export const NAV_ITEMS = [
     { id: 'home', label: 'Home', href: '/', icon: Home },
     { id: 'about', label: 'About', href: '/about', icon: User },
     { id: 'projects', label: 'Projects', href: '/projects', icon: Briefcase },
-    { id: 'blog', label: 'Blog', href: '/blog', icon: BookOpen },
+    // { id: 'blog', label: 'Blog', href: '/blog', icon: BookOpen },
     { id: 'contact', label: 'Contact', href: '/contact', icon: Mail },
 ] as const
 
