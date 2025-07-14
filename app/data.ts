@@ -9,6 +9,7 @@ type Project = {
 type WorkExperience = {
   company: string
   title: string
+  description: string
   start: string
   end: string
   link: string
@@ -51,6 +52,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'SysCo Srl',
     title: 'Software Developer',
+    description: 'Railway Software Development.',
     start: '2022',
     end: 'Present',
     link: 'https://sysco.biz/en',
@@ -59,6 +61,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'Freelance',
     title: 'Software Developer',
+    description: "Helping companies and individuals to fix their software problems and build new features.",
     start: '2025',
     end: 'Present',
     link: 'https://inkeisoft.com',
