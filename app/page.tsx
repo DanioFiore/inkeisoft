@@ -100,6 +100,8 @@ function MagneticSocialLink({
 		<Magnetic springOptions={{ bounce: 0 }} intensity={0.3}>
 			<a
 				href={link}
+				target="_blank"
+				rel="noopener noreferrer"
 				className="group relative inline-flex shrink-0 items-center gap-[1px] rounded-full bg-zinc-100 px-2.5 py-1 text-sm text-black transition-colors duration-200 hover:bg-zinc-950 hover:text-zinc-50 dark:bg-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-700"
 			>
 				{children}
@@ -140,7 +142,6 @@ export default function Personal() {
 						Hi, I&apos;m <strong>Danio Fiore</strong>, a Software Developer who turned his passion for the <strong>Blockchain</strong> into a career. <br />
 						<strong>Inkeisoft</strong> is an idea of minimal Software Development. <br />
 						<strong>Less is more</strong>, and I believe in the power of simplicity and efficiency in software design. <br />
-						Actually I work as a <strong>Backend Engineer</strong> and <strong>Cloud Architect</strong>.
 					</p>
 				</div>
 			</motion.section>

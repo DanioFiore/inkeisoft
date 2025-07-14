@@ -62,7 +62,7 @@ const VALUES = [
     {
         icon: Heart,
         title: 'Passion for Quality',
-        description: 'I love writing clean, maintainable and efficient code. (also the Docs!)',
+        description: 'I love writing clean, maintainable and efficient code. (Docs too!)',
     },
     {
         icon: Star,
@@ -115,7 +115,7 @@ export default function About() {
                     <motion.div
                         variants={VARIANTS_SECTION}
                         transition={TRANSITION_SECTION}
-                        className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12"
+                        className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-12 px-4"
                     >
                         <Magnetic>
                             <motion.div
@@ -139,7 +139,7 @@ export default function About() {
                                 <Calendar className="w-8 h-8 text-zinc-700 dark:text-zinc-300 mb-4 mx-auto" />
                                 <h3 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-2">Experience</h3>
                                 <p className="text-sm text-zinc-600 dark:text-zinc-400">{Math.max(1, Math.floor((new Date().getTime() - new Date('2023-02-01').getTime()) / (1000 * 60 * 60 * 24 * 365)))}+ Years</p>
-                                <p className="text-xs text-zinc-500 dark:text-zinc-500 mt-1">Software Development</p>
+                                <p className="text-xs text-zinc-500 dark:text-zinc-500 mt-1">Software Developer</p>
                             </motion.div>
                         </Magnetic>
                         
@@ -351,15 +351,20 @@ export default function About() {
                         >
                             
                             <div className="space-y-6 text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                                <p>
-                                    <strong className="text-zinc-900 dark:text-zinc-100">Inkeisoft</strong> is an idea, a Minimal approach to software development. <br />
-                                    It is not just a name, but a philosophy that emphasizes simplicity, efficiency, and purpose in every line of code. <br />
-                                    In a world that relentlessly competes for our attention, true strength lies in simplicity. Choosing to eliminate distractions is the first step toward staying focused on what truly matters. <br />
-                                    <br />
-                                    <div className="text-center">
-                                        <strong className="text-zinc-900 dark:text-zinc-100">Less, is more.</strong>
+                                <div>
+                                    <p>
+                                        <strong className="text-zinc-900 dark:text-zinc-100">Inkeisoft</strong> is an idea, a Minimal approach to software development.
+                                    </p>
+                                    <p>
+                                        It is not just a name, but a philosophy that emphasizes simplicity, efficiency, and purpose in every line of code.
+                                    </p>
+                                    <p>
+                                        In a world that relentlessly competes for our attention, true strength lies in simplicity. Choosing to eliminate distractions is the first step toward staying focused on what truly matters.
+                                    </p>
+                                    <div className="text-center mt-6">
+                                        <strong className="text-zinc-900 dark:text-zinc-100">Less is more.</strong>
                                     </div>
-                                </p>
+                                </div>
                             </div>
                         </motion.div>
                     </div>
