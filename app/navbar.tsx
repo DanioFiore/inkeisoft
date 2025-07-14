@@ -28,7 +28,7 @@ import {
 
 // Theme toggle component
 function ThemeToggle() {
-    const { theme, setTheme } = useTheme()
+    const { theme, setTheme, resolvedTheme } = useTheme()
     const [mounted, setMounted] = useState(false)
 
     useEffect(() => {
@@ -41,10 +41,20 @@ function ThemeToggle() {
         )
     }
 
+    const handleThemeToggle = () => {
+        // Use resolvedTheme to get the actual current theme (light/dark)
+        // regardless of whether the user has selected 'system', 'light', or 'dark'
+        if (resolvedTheme === 'dark') {
+            setTheme('light')
+        } else {
+            setTheme('dark')
+        }
+    }
+
     return (
         <Magnetic>
         <motion.button
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            onClick={handleThemeToggle}
             className={cn(
             'relative h-9 w-9 rounded-md border transition-colors',
             NAVBAR_CONFIG.borderColor,
@@ -54,7 +64,7 @@ function ThemeToggle() {
             whileTap={{ scale: 0.95 }}
         >
             <AnimatePresence mode="wait">
-            {theme === 'dark' ? (
+            {resolvedTheme === 'dark' ? (
                 <motion.div
                 key="sun"
                 initial={{ opacity: 0, rotate: -90 }}
