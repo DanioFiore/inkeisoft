@@ -47,22 +47,22 @@ const SKILLS = [
     },
 ]
 
-const STATS = [
-    { 
-        label: 'Years of Experience', 
-        // Calculate years since February 2023
-        value: `${Math.max(1, Math.floor((new Date().getTime() - new Date('2023-02-01').getTime()) / (1000 * 60 * 60 * 24 * 365)))}+` 
-    },
-    { label: 'Projects Completed', value: '5+' },
-    { label: 'Happy Clients', value: '10+' },
-    { label: 'Lines of Code', value: '100K+' },
-]
+// const STATS = [
+//     { 
+//         label: 'Years of Experience', 
+//         // Calculate years since February 2023
+//         value: `${Math.max(1, Math.floor((new Date().getTime() - new Date('2023-02-01').getTime()) / (1000 * 60 * 60 * 24 * 365)))}+` 
+//     },
+//     { label: 'Projects Completed', value: '2+' },
+//     { label: 'Happy Clients', value: '10+' },
+//     { label: 'Lines of Code', value: '100K+' },
+// ]
 
 const VALUES = [
     {
         icon: Heart,
         title: 'Passion for Quality',
-        description: 'I love writing clean, maintainable and efficient code.',
+        description: 'I love writing clean, maintainable and efficient code. (also the Docs!)',
     },
     {
         icon: Star,
@@ -72,7 +72,7 @@ const VALUES = [
     {
         icon: Code,
         title: 'Problem Solving',
-        description: 'I enjoy tackling complex challenges and finding elegant solutions to difficult problems.',
+        description: 'I enjoy transforming complex problems into minimal and simple solutions.',
     },
 ]
 
@@ -108,7 +108,7 @@ export default function About() {
                         delay={0.2}
                         className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-3xl mx-auto"
                     >
-                        Hi, I'm Danio Fiore, Software Developer. I'm passionate about creating minimal, effective software solutions that solve real-world problems.
+                        Hi, I'm Danio Fiore, Software Developer.
                     </TextEffect>
                     
                     {/* Personal Info Cards */}
@@ -167,8 +167,7 @@ export default function About() {
                     <div className="text-center">
                         <h2 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">Skills & Expertise</h2>
                         <p className="text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-                            I specialize in modern web technologies and love working with the latest tools to create 
-                            exceptional digital experiences.
+                            I love the Backend part, but don't shy away from the Frontend.
                         </p>
                     </div>
                     
@@ -214,7 +213,7 @@ export default function About() {
                 </motion.section>
 
                 {/* Stats Section */}
-                <motion.section
+                {/* <motion.section
                     variants={VARIANTS_SECTION}
                     transition={TRANSITION_SECTION}
                     className="bg-zinc-50 dark:bg-zinc-900/50 rounded-2xl p-8 mx-4"
@@ -244,7 +243,7 @@ export default function About() {
                             </motion.div>
                         ))}
                     </div>
-                </motion.section>
+                </motion.section> */}
 
                 {/* Work Experience */}
                 <motion.section
@@ -280,6 +279,11 @@ export default function About() {
                                         <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">
                                             {work.start} - {work.end}
                                         </p>
+                                        {work.description && (
+                                            <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-3 leading-relaxed">
+                                                {work.description}
+                                            </p>
+                                        )}
                                     </div>
                                 </motion.div>
                             </Magnetic>
@@ -328,6 +332,39 @@ export default function About() {
                     </div>
                 </motion.section>
 
+                {/* About Inkeisoft Section */}
+                <motion.section
+                    variants={VARIANTS_SECTION}
+                    transition={TRANSITION_SECTION}
+                    className="space-y-8"
+                >
+                    <div className="text-center">
+                        <h2 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">What is Inkeisoft</h2>
+                    </div>
+                    
+                    <div className="max-w-4xl mx-auto px-4">
+                        <motion.div
+                            className="p-8 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700"
+                            whileHover={{ scale: 1.01 }}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                        >
+                            
+                            <div className="space-y-6 text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                                <p>
+                                    <strong className="text-zinc-900 dark:text-zinc-100">Inkeisoft</strong> is an idea, a Minimal approach to software development. <br />
+                                    It is not just a name, but a philosophy that emphasizes simplicity, efficiency, and purpose in every line of code. <br />
+                                    In a world that relentlessly competes for our attention, true strength lies in simplicity. Choosing to eliminate distractions is the first step toward staying focused on what truly matters. <br />
+                                    <br />
+                                    <div className="text-center">
+                                        <strong className="text-zinc-900 dark:text-zinc-100">Less, is more.</strong>
+                                    </div>
+                                </p>
+                            </div>
+                        </motion.div>
+                    </div>
+                </motion.section>
+
                 {/* Call to Action */}
                 <motion.section
                     variants={VARIANTS_SECTION}
@@ -335,11 +372,13 @@ export default function About() {
                     className="text-center space-y-6 py-16"
                 >
                     <h2 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100">
-                        Let's Work Together
+                        {/* Let's Work Together */}
+                        Want to discuss about your ideas?
                     </h2>
                     <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-                        Ready to bring your ideas to life? I'd love to hear about your project and 
-                        discuss how we can create something amazing together.
+                        {/* Ready to bring your ideas to life? I'd love to hear about your project and 
+                        discuss how we can create something amazing together. */}
+                        Let's talk, I'm all ears!
                     </p>
                     <Magnetic>
                         <motion.a
