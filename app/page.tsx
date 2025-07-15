@@ -136,6 +136,16 @@ function ProjectLogo({ src, alt }: ProjectLogoProps) {
 	)
 }
 
+function ProjectLogoStatic({ src, alt }: ProjectLogoProps) {
+	return (
+		<img
+			src={src}
+			alt={alt}
+			className="aspect-video w-full rounded-xl object-cover"
+		/>
+	)
+}
+
 function MagneticSocialLink({
 	children,
 	link,
@@ -203,7 +213,7 @@ export default function Personal() {
 						<div key={project.name} className="space-y-2">
 							<div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
 								{project.logo ? (
-									<ProjectLogo src={project.logo} alt={`${project.name} logo`} />
+									<ProjectLogoStatic src={project.logo} alt={`${project.name} logo`} />
 								) : project.video ? (
 									<ProjectVideo src={project.video} />
 								) : (
