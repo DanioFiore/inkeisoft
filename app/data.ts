@@ -33,7 +33,7 @@ export const SELECTED_PROJECTS: Project[] = [
   {
     name: 'Know Yourself AI',
     description:
-      'Stop to remember everything. Know Yourself AI is a personal knowledge management system that uses AI to help you remember and organize your thoughts, ideas, and experiences.',
+      'Stop remembering everything. Know Yourself AI is a personal knowledge management system that uses AI to help you remember and organize your thoughts, ideas and experiences.',
     link: 'https://github.com/DanioFiore/know-yourself-ai',
     video:
       'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
@@ -43,7 +43,7 @@ export const SELECTED_PROJECTS: Project[] = [
   {
     name: 'Money Wizardry',
     description:
-      'Track your finances with ease. Money Wizardry is a personal finance management tool that helps you budget, track expenses, and achieve your financial goals.',
+      'Track your finances with ease. Money Wizardry is a personal finance management tool that helps you budget, track expenses and achieve your financial goals.',
     link: 'https://github.com/DanioFiore/money-wizardry',
     video:
       'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
@@ -57,7 +57,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'SysCo Srl',
     title: 'Software Developer',
-    description: 'Railway Software Development.',
+    description: 'Railway Software Development',
     start: '2022',
     end: 'Present',
     link: 'https://sysco.biz/en',
@@ -66,7 +66,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'Freelance',
     title: 'Software Developer',
-    description: "Helping companies and individuals to fix their software problems and build new features.",
+    description: "Helping companies and individuals to fix their software problems and build new features",
     start: '2025',
     end: 'Present',
     link: 'https://inkeisoft.com',

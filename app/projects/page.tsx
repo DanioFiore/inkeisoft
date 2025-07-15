@@ -30,7 +30,7 @@ const PROJECTS = [
     {
         id: 1,
         title: "Know Yourself AI",
-        description: "Stop to remember everything. Know Yourself AI is a personal knowledge management system that uses AI to help you remember and organize your thoughts, ideas, and experiences.",
+        description: "Stop remembering everything. Know Yourself AI is a personal knowledge management system that uses AI to help you remember and organize your thoughts, ideas and experiences.",
         image: "/images/projects_logos/know-yourself-ai-logo.png",
         technologies: ["Python", "FastAPI", "PostgreSQL", "Vue.js", "Docker", 'OpenAI', "Redis"],
         category: "Full Stack",
@@ -51,7 +51,7 @@ const PROJECTS = [
     {
         id: 2,
         title: "Money Wizardry",
-        description: "Track your finances with ease. Money Wizardry is a personal finance management tool that helps you budget, track expenses, and achieve your financial goals.",
+        description: "Track your finances with ease. Money Wizardry is a personal finance management tool that helps you budget, track expenses and achieve your financial goals.",
         image: "/images/projects_logos/money-wizardry-logo.png",
         technologies: ["Python", "FastAPI", "PostgreSQL", "Redis", "Docker"],
         category: "Full Stack",
@@ -305,10 +305,10 @@ export default function Projects() {
                     className="text-center space-y-6 py-16"
                 >
                     <h2 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100">
-                        Need Help?
+                        Need help with your issues?
                     </h2>
                     <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-                        If you want a hand with your issues, feel free to reach me out!
+                        Feel free to reach me out!
                     </p>
                     <Magnetic>
                         <motion.a

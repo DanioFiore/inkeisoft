@@ -62,7 +62,7 @@ const VALUES = [
     {
         icon: Heart,
         title: 'Passion for Quality',
-        description: 'I love writing clean, maintainable and efficient code. (Docs too!)',
+        description: 'I love to write clean, maintainable and efficient code. (Docs too!)',
     },
     {
         icon: Star,
@@ -108,7 +108,7 @@ export default function About() {
                         delay={0.2}
                         className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-3xl mx-auto"
                     >
-                        Hi, I'm Danio Fiore, Software Developer.
+                        Hi, I'm Danio Fiore, Software Developer
                     </TextEffect>
                     
                     {/* Personal Info Cards */}
@@ -167,7 +167,7 @@ export default function About() {
                     <div className="text-center">
                         <h2 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">Skills & Expertise</h2>
                         <p className="text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-                            I love the Backend part, but don't shy away from the Frontend.
+                            I love the Backend part, but don't shy away from the Frontend
                         </p>
                     </div>
                     
@@ -353,7 +353,7 @@ export default function About() {
                             <div className="space-y-6 text-zinc-600 dark:text-zinc-400 leading-relaxed">
                                 <div>
                                     <p>
-                                        <strong className="text-zinc-900 dark:text-zinc-100">Inkeisoft</strong> is an idea, a Minimal approach to software development.
+                                        <strong className="text-zinc-900 dark:text-zinc-100">Inkeisoft</strong> is an idea, a minimal approach to software development.
                                     </p>
                                     <p>
                                         It's not just a name, but a philosophy that emphasizes simplicity, efficiency, and purpose in every line of code.
@@ -378,7 +378,7 @@ export default function About() {
                 >
                     <h2 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100">
                         {/* Let's Work Together */}
-                        Want to talk about your ideas?
+                        Do you want to talk about your ideas?
                     </h2>
                     <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
                         {/* Ready to bring your ideas to life? I'd love to hear about your project and 
