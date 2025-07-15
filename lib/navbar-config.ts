@@ -187,11 +187,8 @@ export const NAV_ITEMS = [
 
 // Social links configuration
 export const SOCIAL_LINKS = [
-    { id: 'github', label: 'GitHub', href: 'https://github.com/inkeisoft', icon: Github },
-    { id: 'linkedin', label: 'LinkedIn', href: 'https://linkedin.com/company/inkeisoft', icon: Linkedin },
-    { id: 'twitter', label: 'Twitter', href: 'https://twitter.com/inkeisoft', icon: Twitter },
-    { id: 'instagram', label: 'Instagram', href: 'https://instagram.com/inkeisoft', icon: Instagram },
-    { id: 'youtube', label: 'YouTube', href: 'https://youtube.com/@inkeisoft', icon: Youtube },
+    { id: 'github', label: 'GitHub', href: 'https://github.com/DanioFiore', icon: Github },
+    { id: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/danio-fiore/?locale=en_US', icon: Linkedin },
 ] as const
 
 // Company information
@@ -389,10 +386,10 @@ export const ACCESSIBILITY_CONFIG = {
 export const SEO_CONFIG = {
     title: 'Inkeisoft - In Case Of Software',
     description: 'Minimal Software development',
-    keywords: ['software development', 'web development', 'mobile apps', 'technology', 'software', 'minimalistic'],
+    keywords: ['about', 'danio fiore', 'software developer', 'inkeisoft', 'software engineering', 'minimalistic', 'minimal software development', 'clean code', 'php', 'vue.js', 'javascript', 'laravel', 'python', 'fastapi', 'mysql', 'sql', 'postgresql', 'web development','tech startup', 'modern development', 'user experience', 'performance optimization'],
     author: 'Inkeisoft',
     siteUrl: 'https://www.inkeisoft.com',
-    image: '/cover.jpg',
+    image: '/public/inkeisoft-logo.png',
     twitterCard: 'summary_large_image',
     locale: 'en_US',
     type: 'website',
