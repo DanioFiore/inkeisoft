@@ -37,7 +37,7 @@ const SKILLS = [
         icon: Database,
         title: 'Backend Development',
         description: 'Python, FastAPI, Flask, PHP, Laravel, SQL, MySQL, PostgreSQL',
-        level: 88,
+        level: 85,
     },
     {
         icon: Globe,
@@ -356,7 +356,7 @@ export default function About() {
                                         <strong className="text-zinc-900 dark:text-zinc-100">Inkeisoft</strong> is an idea, a Minimal approach to software development.
                                     </p>
                                     <p>
-                                        It is not just a name, but a philosophy that emphasizes simplicity, efficiency, and purpose in every line of code.
+                                        It's not just a name, but a philosophy that emphasizes simplicity, efficiency, and purpose in every line of code.
                                     </p>
                                     <p>
                                         In a world that relentlessly competes for our attention, true strength lies in simplicity. Choosing to eliminate distractions is the first step toward staying focused on what truly matters.
@@ -378,12 +378,12 @@ export default function About() {
                 >
                     <h2 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100">
                         {/* Let's Work Together */}
-                        Want to discuss about your ideas?
+                        Want to talk about your ideas?
                     </h2>
                     <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
                         {/* Ready to bring your ideas to life? I'd love to hear about your project and 
                         discuss how we can create something amazing together. */}
-                        Let's talk, I'm all ears!
+                        I'm all ears!
                     </p>
                     <Magnetic>
                         <motion.a

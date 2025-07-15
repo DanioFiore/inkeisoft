@@ -305,10 +305,10 @@ export default function Projects() {
                     className="text-center space-y-6 py-16"
                 >
                     <h2 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100">
-                        Need a Help?
+                        Need Help?
                     </h2>
                     <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-                        If you want a hand with your issues, feel free to reach out!
+                        If you want a hand with your issues, feel free to reach me out!
                     </p>
                     <Magnetic>
                         <motion.a
