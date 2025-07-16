@@ -223,14 +223,25 @@ export default function Personal() {
 								)}
 							</div>
 							<div className="px-1">
-								<a
-									className="font-base group relative inline-block font-[450] text-zinc-900 dark:text-zinc-50"
-									href={project.link}
-									target="_blank"
-								>
-									{project.name}
-									<span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 dark:bg-zinc-50 transition-all duration-200 group-hover:max-w-full"></span>
-								</a>
+								{project.is_public ? (
+									<a
+										className="font-base group relative inline-block font-[450] text-zinc-900 dark:text-zinc-50"
+										href={project.link}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										{project.name}
+										<span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 dark:bg-zinc-50 transition-all duration-200 group-hover:max-w-full"></span>
+									</a>
+								) : (
+									<Link
+										className="font-base group relative inline-block font-[450] text-zinc-900 dark:text-zinc-50"
+										href={`/projects/${project.id}`}
+									>
+										{project.name}
+										<span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 dark:bg-zinc-50 transition-all duration-200 group-hover:max-w-full"></span>
+									</Link>
+								)}
 								<p className="text-base text-zinc-600 dark:text-zinc-400">
 									{project.description}
 								</p>
