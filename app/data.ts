@@ -61,7 +61,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     company: 'SysCo Srl',
     title: 'Software Developer',
     description: 'Railway Software Development',
-    start: '2022',
+    start: '2023',
     end: 'Present',
     link: 'https://sysco.biz/en',
     id: 'work1',
