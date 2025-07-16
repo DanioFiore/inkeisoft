@@ -49,7 +49,7 @@ const CONTACT_METHODS = [
         label: 'Location',
         value: 'Bari, Italy',
         href: 'https://maps.google.com/?q=Bari,Italy',
-        description: 'Based in Bari, Italy - available for remote work worldwide',
+        description: 'Based in Bari, Italy - available worldwide',
     },
 ]
 
