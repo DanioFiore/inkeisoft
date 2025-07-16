@@ -4,6 +4,7 @@ type Project = {
   link: string
   video?: string
   logo?: string
+  is_public?: boolean
   id: string
 }
 
@@ -38,7 +39,8 @@ export const SELECTED_PROJECTS: Project[] = [
     video:
       'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
     logo: '/images/projects_logos/know-yourself-ai-logo.png',
-    id: 'project1',
+    is_public: false,
+    id: '1',
   },
   {
     name: 'Money Wizardry',
@@ -48,7 +50,8 @@ export const SELECTED_PROJECTS: Project[] = [
     video:
       'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
     logo: '/images/projects_logos/money-wizardry-logo.png',
-    id: 'project2',
+    is_public: false,
+    id: '2',
   },
 
 ]
