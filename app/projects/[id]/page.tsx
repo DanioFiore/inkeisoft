@@ -234,7 +234,7 @@ export default function ProjectDocumentation() {
                                 Documentation In Progress
                             </TextEffect>
                             <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-                                We're currently working on the documentation for {project.title}. 
+                                I'm currently working on the documentation for {project.title}. 
                                 Check back soon for detailed guides, API references, and usage examples.
                             </p>
                         </div>

@@ -54,7 +54,7 @@ const PROJECTS = [
         title: "Money Wizardry",
         description: "Track your finances with ease. Money Wizardry is a personal finance management tool that helps you budget, track expenses and achieve your financial goals.",
         image: "/images/projects_logos/money-wizardry-logo.png",
-        technologies: ["Python", "FastAPI", "PostgreSQL", "Redis", "Docker"],
+        technologies: ["Python", "FastAPI", "PostgreSQL", "Docker"],
         category: "Backend",
         status: "In progress",
         year: "2025",
