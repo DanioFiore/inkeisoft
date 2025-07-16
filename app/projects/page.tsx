@@ -38,6 +38,7 @@ const PROJECTS = [
         year: "2025",
         is_public: false,
         is_online: false,
+        has_docs: false,
         links: {
             github: "https://github.com/DanioFiore/know-yourself-ai",
             demo: "https://know-yourself-ai.inkeisoft.com"
@@ -54,20 +55,20 @@ const PROJECTS = [
         description: "Track your finances with ease. Money Wizardry is a personal finance management tool that helps you budget, track expenses and achieve your financial goals.",
         image: "/images/projects_logos/money-wizardry-logo.png",
         technologies: ["Python", "FastAPI", "PostgreSQL", "Redis", "Docker"],
-        category: "Full Stack",
+        category: "Backend",
         status: "In progress",
         year: "2025",
         is_public: false,
         is_online: false,
+        has_docs: false,
         links: {
             github: "https://github.com/DanioFiore/money-wizardry",
             demo: "https://api.taskmanager.inkeisoft.com/docs"
         },
         highlights: [
-            "Integrated with OpenAI for financial insights",
+            "Telegram chat, no app required",
             "Real-time expense tracking",
-            "Budgeting tools and financial goal setting",
-            "Integration with Telegram chat"
+            "Fast and easy, no waste of time"
         ]
     }
 ]
@@ -246,27 +247,24 @@ export default function Projects() {
 
                                         {/* Links */}
                                         <div className="flex gap-3 pt-4 border-t border-zinc-200 dark:border-zinc-700">
-                                            {project.links.github && (
-                                                project.is_public ? (
-                                                    <Link
-                                                        href={project.links.github}
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className="flex items-center gap-2 px-4 py-2 bg-zinc-100 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-300 rounded-lg text-sm font-medium hover:bg-zinc-200 dark:hover:bg-zinc-600 transition-colors"
-                                                    >
-                                                        <Github className="w-4 h-4" />
-                                                        View Code
-                                                    </Link>
-                                                ) : (
-                                                    <button
-                                                        disabled
-                                                        className="flex items-center gap-2 px-4 py-2 bg-zinc-50 dark:bg-zinc-800 text-zinc-400 dark:text-zinc-600 rounded-lg text-sm font-medium cursor-not-allowed opacity-50"
-                                                        title="Code is private"
-                                                    >
-                                                        <Github className="w-4 h-4" />
-                                                        Private Code
-                                                    </button>
-                                                )
+                                            {project.is_public ? (
+                                                <Link
+                                                    href={project.links.github}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="flex items-center gap-2 px-4 py-2 bg-zinc-100 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-300 rounded-lg text-sm font-medium hover:bg-zinc-200 dark:hover:bg-zinc-600 transition-colors"
+                                                >
+                                                    <Github className="w-4 h-4" />
+                                                    View Code
+                                                </Link>
+                                            ) : (
+                                                <Link
+                                                    href={`/projects/${project.id}`}
+                                                    className="flex items-center gap-2 px-4 py-2 bg-zinc-100 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-300 rounded-lg text-sm font-medium hover:bg-zinc-200 dark:hover:bg-zinc-600 transition-colors"
+                                                >
+                                                    <ExternalLink className="w-4 h-4" />
+                                                    Show Docs
+                                                </Link>
                                             )}
                                             {project.links.demo && (
                                                 project.is_online ? (
