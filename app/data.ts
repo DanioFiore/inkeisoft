@@ -66,15 +66,15 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: 'https://sysco.biz/en',
     id: 'work1',
   },
-  {
-    company: 'Freelance',
-    title: 'Software Developer',
-    description: "Helping companies and individuals to fix their software problems and build new features",
-    start: '2025',
-    end: 'Present',
-    link: 'https://inkeisoft.com',
-    id: 'work2',
-  }
+  // {
+  //   company: 'Freelance',
+  //   title: 'Software Developer',
+  //   description: "Helping companies and individuals to fix their software problems and build new features",
+  //   start: '2025',
+  //   end: 'Present',
+  //   link: 'https://inkeisoft.com',
+  //   id: 'work2',
+  // }
 ]
 
 export const BLOG_POSTS: BlogPost[] = [

@@ -149,7 +149,7 @@ export default function Projects() {
                         {PROJECTS.map((project, index) => (
                             <Magnetic key={project.id}>
                                 <motion.div
-                                    className="bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 overflow-hidden"
+                                    className="bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 overflow-hidden h-full flex flex-col"
                                     whileHover={{ scale: 1.02 }}
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
@@ -179,7 +179,7 @@ export default function Projects() {
                                     </div>
                                     
                                     {/* Project Content */}
-                                    <div className="p-6 space-y-4">
+                                    <div className="p-6 space-y-4 flex-1 flex flex-col">
                                         {/* Header */}
                                         <div className="flex items-start justify-between">
                                             <div>
@@ -246,7 +246,7 @@ export default function Projects() {
                                         </div>
 
                                         {/* Links */}
-                                        <div className="flex gap-3 pt-4 border-t border-zinc-200 dark:border-zinc-700">
+                                        <div className="flex gap-3 pt-4 border-t border-zinc-200 dark:border-zinc-700 mt-auto">
                                             {project.is_public ? (
                                                 <Link
                                                     href={project.links.github}
@@ -297,7 +297,7 @@ export default function Projects() {
                 </motion.section>
 
                 {/* Call to Action */}
-                <motion.section
+                {/* <motion.section
                     variants={VARIANTS_SECTION}
                     transition={TRANSITION_SECTION}
                     className="text-center space-y-6 py-16"
@@ -325,7 +325,7 @@ export default function Projects() {
                             </motion.div>
                         </motion.a>
                     </Magnetic>
-                </motion.section>
+                </motion.section> */}
             </motion.div>
         </div>
     )

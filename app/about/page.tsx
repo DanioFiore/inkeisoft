@@ -371,18 +371,15 @@ export default function About() {
                 </motion.section>
 
                 {/* Call to Action */}
-                <motion.section
+                {/* <motion.section
                     variants={VARIANTS_SECTION}
                     transition={TRANSITION_SECTION}
                     className="text-center space-y-6 py-16"
                 >
                     <h2 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100">
-                        {/* Let's Work Together */}
                         Do you want to talk about your ideas?
                     </h2>
                     <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-                        {/* Ready to bring your ideas to life? I'd love to hear about your project and 
-                        discuss how we can create something amazing together. */}
                         I'm all ears!
                     </p>
                     <Magnetic>
@@ -402,7 +399,7 @@ export default function About() {
                             </motion.div>
                         </motion.a>
                     </Magnetic>
-                </motion.section>
+                </motion.section> */}
             </motion.div>
         </div>
     )

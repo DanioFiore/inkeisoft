@@ -253,7 +253,7 @@ export default function Contact() {
                 delay={0.2}
                 className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto"
             >
-                Do you want to discuss a project or just say hello? I'm always excited to hear from you
+                Do you need help with your issues or just want to say hello? I'm always excited to hear from you
             </TextEffect>
             </motion.section>
 
