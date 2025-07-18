@@ -1,5 +1,3 @@
-import { motion } from 'motion/react'
-
 export default function ContactLoading() {
     return (
         <div className="space-y-16">

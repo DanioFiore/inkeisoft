@@ -9,15 +9,12 @@ import { AnimatedBackground } from '@/components/ui/animated-background'
 import { Magnetic } from '@/components/ui/magnetic'
 import { TextEffect } from '@/components/ui/text-effect'
 import { Logo } from '@/components/ui/logo'
-import { NavButton } from '@/components/ui/nav-button'
-import { SocialLink } from '@/components/ui/social-link'
 import { ScrollIndicator } from '@/components/ui/scroll-indicator'
 import {
     NAV_ITEMS,
     SOCIAL_LINKS,
     NAVBAR_CONFIG,
     MOBILE_MENU_CONFIG,
-    ANIMATION_VARIANTS,
 } from '@/lib/navbar-config'
 import { 
     Sun, 

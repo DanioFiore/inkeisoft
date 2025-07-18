@@ -5,8 +5,7 @@ import { Mail, Phone, MapPin, Send, Github, Linkedin, ExternalLink } from 'lucid
 import { Spotlight } from '@/components/ui/spotlight'
 import { Magnetic } from '@/components/ui/magnetic'
 import { TextEffect } from '@/components/ui/text-effect'
-import { AnimatedBackground } from '@/components/ui/animated-background'
-import { COMPANY_INFO, SOCIAL_LINKS as CONFIG_SOCIAL_LINKS } from '@/lib/navbar-config'
+import { COMPANY_INFO } from '@/lib/navbar-config'
 import { EMAIL, SOCIAL_LINKS } from '@/app/data'
 import { useState } from 'react'
 

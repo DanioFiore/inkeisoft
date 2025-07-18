@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'motion/react'
-import { CheckCircle, ArrowLeft, Mail } from 'lucide-react'
+import { CheckCircle, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 import { TextEffect } from '@/components/ui/text-effect'
 import { Magnetic } from '@/components/ui/magnetic'

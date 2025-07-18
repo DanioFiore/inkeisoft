@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from 'motion/react'
-import { Code, ExternalLink, Github, Globe, Database, Smartphone, Calendar, Star } from 'lucide-react'
+import { Code, ExternalLink, Github, Calendar, Star } from 'lucide-react'
 import { Spotlight } from '@/components/ui/spotlight'
 import { Magnetic } from '@/components/ui/magnetic'
 import { TextEffect } from '@/components/ui/text-effect'
