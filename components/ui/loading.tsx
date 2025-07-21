@@ -22,7 +22,7 @@ export default function Loading() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
                 >
-                    Loading projects...
+                    Loading page...
                 </motion.p>
             </motion.div>
         </div>

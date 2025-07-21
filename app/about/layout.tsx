@@ -2,18 +2,18 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
     title: 'About - Inkeisoft',
-    description: 'Learn more about Inkeisoft, idea of minimal Software Development, and its founder Danio Fiore.',
+    description: 'Minimal Software Development',
     keywords: ['about', 'danio fiore', 'software developer', 'inkeisoft', 'software engineering', 'minimalistic', 'minimal software development', 'clean code', 'php', 'vue.js', 'javascript', 'laravel', 'python', 'fastapi', 'mysql', 'sql', 'postgresql', 'web development','tech startup', 'modern development', 'user experience', 'performance optimization'],
     openGraph: {
         title: 'About - Inkeisoft',
-        description: 'Learn more about Inkeisoft, idea of minimal Software Development, and its founder Danio Fiore.',
+        description: 'Minimal Software Development',
         type: 'website',
         url: 'https://www.inkeisoft.com/about',
     },
     twitter: {
         card: 'summary_large_image',
         title: 'About - Inkeisoft',
-        description: 'Learn more about Inkeisoft, idea of minimal Software Development, and its founder Danio Fiore.',
+        description: 'Minimal Software Development',
     },
 }
 

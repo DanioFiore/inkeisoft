@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         default: 'Inkeisoft',
         template: '%s | Inkeisoft'
     },
-    description:  'Inkeisoft is an idea of minimal Software Development',
+    description:  'Minimal Software Development',
 };
 
 const geist = Geist({
