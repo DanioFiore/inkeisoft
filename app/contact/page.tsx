@@ -8,25 +8,7 @@ import { TextEffect } from '@/components/ui/text-effect'
 import { COMPANY_INFO } from '@/lib/navbar-config'
 import { EMAIL, SOCIAL_LINKS } from '@/app/data'
 import { useState } from 'react'
-
-const VARIANTS_CONTAINER = {
-    hidden: { opacity: 0 },
-    visible: {
-        opacity: 1,
-        transition: {
-        staggerChildren: 0.15,
-        },
-    },
-}
-
-const VARIANTS_SECTION = {
-    hidden: { opacity: 0, y: 20, filter: 'blur(8px)' },
-    visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
-}
-
-const TRANSITION_SECTION = {
-    duration: 0.3,
-}
+import { VARIANTS_CONTAINER, VARIANTS_SECTION, TRANSITION_SECTION } from '../data'
 
 const CONTACT_METHODS = [
     {
