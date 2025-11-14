@@ -352,6 +352,36 @@ export default function About() {
                     </div>
                 </motion.section>
 
+                {/* CV Button Section */}
+                <motion.section
+                    variants={VARIANTS_SECTION}
+                    transition={TRANSITION_SECTION}
+                    className="text-center space-y-6 py-16"
+                >
+                    <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
+                        Want to take a look at my resume?
+                    </p>
+                    <Magnetic>
+                        <motion.a
+                            href="/cv.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center px-8 py-4 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 rounded-lg font-medium hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                        >
+                            View Resume
+                            <motion.span
+                                className="ml-2"
+                                animate={{ x: [0, 4, 0] }}
+                                transition={{ duration: 1.5, repeat: Infinity }}
+                            >
+                                →
+                            </motion.span>
+                        </motion.a>
+                    </Magnetic>
+                </motion.section>
+
                 {/* Call to Action */}
                 {/* <motion.section
                     variants={VARIANTS_SECTION}
